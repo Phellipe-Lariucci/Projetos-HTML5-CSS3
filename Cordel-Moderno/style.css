@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fonts/Sriracha-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Passion";
+    src: url('fonts/PassionOne-Regular.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: black;
+    color: white;
+    font-family: 'Passion';
+}
+header > h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 4em;
+}
+header > h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header > h2 > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+header > h2 > a:hover{
+    text-decoration: underline;
+}
+body{
+    background-color: black;
+}
+.impar{
+    background-color: white;
+}
+#flor{
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+}
+article{
+    background-color: rgba(0, 0, 0, 0.50);
+    max-width: fit-content;
+    padding-right: 6px;
+}
+#livros{
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.692);
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+p{
+    text-align:start;
+    padding: 20px;
+    font-family: 'Sriracha';
+    font-size: 4vw;
+    line-height: 6vw;
+    
+}
+footer > p{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: normal;
+}
