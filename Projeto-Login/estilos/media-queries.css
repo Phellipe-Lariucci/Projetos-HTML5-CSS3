@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 992px) {
+  body {
+    position: relative;
+    background-color: #606c38;
+    height: 100vh;
+    width: 100vw;
+  }
+  main {
+    position: absolute;
+    background-image: url(../imagens/pexels-padrinan.jpg);
+    min-width: 90vw;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+  main > section {
+    position: absolute;
+    background-color: #fefae0;
+    position: end;
+    height: 50%;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  p {
+    font-size: 0.8em;
+    text-indent: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #idmail-wrap {
+    background-color: #606c38;
+    text-align: right;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  #iconeM {
+    height: 25px;
+    width: 25px;
+  }
+
+  #idmail {
+    width: 85%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+  }
+
+  #idsenha-wrap:before {
+    content: "🗝️";
+  }
+
+  #idsenha-wrap {
+    background-color: #606c38;
+    text-align: right;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  #idsenha {
+    width: 85%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+  }
+
+  #enviar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+  }
+
+  #esqueci {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+  }
+}

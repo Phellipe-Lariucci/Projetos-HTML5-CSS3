@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all" />
+    <link rel="stylesheet" href="estilos/media-queries.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Login</h1>
+        <p>
+          Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder
+          fazer as configuraçoes do seu ambiente.
+        </p>
+        <form method="post" autocomplete="on">
+          <div id="idmail-wrap">
+            <label for="idmail"
+              ><img src="imagens/user-icon.png" alt="icone login" id="iconeM"
+            /></label>
+            <input
+              type="email"
+              name="mail"
+              id="idmail"
+              required
+              placeholder="Digite seu E-mail"
+            />
+          </div>
+
+          <div id="idsenha-wrap">
+            <input
+              type="password"
+              name="senha"
+              id="idsenha"
+              minlength="8"
+              required
+              placeholder="Digite sua senha"
+            />
+          </div>
+          <input type="submit" value="Entrar" id="enviar" />
+          <input type="button" value="Esqueci minha senha" id="esqueci" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
