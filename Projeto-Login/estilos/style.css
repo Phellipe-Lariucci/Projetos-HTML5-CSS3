@@ -8,5 +8,17 @@
 body,
 html {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #aa7d48;
   color: #606c38;
+}
+
+p {
+  font-size: 0.8em;
+  text-indent: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
 }

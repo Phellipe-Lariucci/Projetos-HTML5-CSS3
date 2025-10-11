@@ -15,7 +15,7 @@
           Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder
           fazer as configuraçoes do seu ambiente.
         </p>
-        <form method="post" autocomplete="on">
+        <form method="post" autocomplete="off">
           <div id="idmail-wrap">
             <label for="idmail"
               ><img src="imagens/user-icon.png" alt="icone login" id="iconeM"
@@ -26,10 +26,17 @@
               id="idmail"
               required
               placeholder="Digite seu E-mail"
+              autofocus
             />
           </div>
 
           <div id="idsenha-wrap">
+            <label for="idmail"
+              ><img
+                src="imagens/icon-password.png"
+                alt="icone senha"
+                id="iconeS"
+            /></label>
             <input
               type="password"
               name="senha"

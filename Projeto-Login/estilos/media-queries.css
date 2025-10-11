@@ -1,22 +1,25 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   body {
     position: relative;
-    background-color: #606c38;
+    background-color: #aa7d48;
     height: 100vh;
     width: 100vw;
   }
   main {
     position: absolute;
     background-image: url(../imagens/pexels-padrinan.jpg);
-    min-width: 90vw;
-    height: 60vh;
+    background-size: cover;
+    min-width: 300px;
+    height: 70vh;
+    min-height: 600px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
   }
+
   main > section {
     position: absolute;
     background-color: #fefae0;
@@ -26,13 +29,9 @@
     padding: 10px;
     box-sizing: border-box;
     border-radius: 0px 0px 20px 20px;
-  }
 
-  p {
-    font-size: 0.8em;
-    text-indent: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
   }
 
   #idmail-wrap {
@@ -40,11 +39,16 @@
     text-align: right;
     height: 40px;
     border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
   }
 
   #iconeM {
     height: 25px;
     width: 25px;
+    position: relative;
+    top: 50%;
+    transform: translate(-10%, -50%);
   }
 
   #idmail {
@@ -52,10 +56,15 @@
     height: 100%;
     border-radius: 0px 10px 10px 0px;
     box-sizing: border-box;
+    background-color: #9fb35e;
   }
 
-  #idsenha-wrap:before {
-    content: "🗝️";
+  #idmail:focus {
+    background-color: white;
+  }
+
+  #idmail::placeholder {
+    color: black;
   }
 
   #idsenha-wrap {
@@ -63,6 +72,16 @@
     text-align: right;
     height: 40px;
     border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+  }
+
+  #iconeS {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 50%;
+    transform: translate(-10%, -50%);
   }
 
   #idsenha {
@@ -70,6 +89,151 @@
     height: 100%;
     border-radius: 0px 10px 10px 0px;
     box-sizing: border-box;
+    background-color: #9fb35e;
+  }
+
+  #idsenha::placeholder {
+    color: black;
+  }
+
+  #idsenha:focus {
+    background-color: white;
+  }
+
+  #enviar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  #enviar:active {
+    background-color: #bb894f;
+  }
+
+  #esqueci {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    position: relative;
+    background-image: linear-gradient(to bottom, #c59054 50%, #db4804);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  main {
+    position: absolute;
+    background-image: url(../imagens/pexels-padrinan.jpg);
+    background-size: cover;
+    min-width: 600px;
+    width: 70vw;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  main > section {
+    position: absolute;
+    background-color: #fefae0;
+    position: left;
+    height: 100%;
+    max-width: 60%;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px 0px 0px 20px;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+  }
+
+  p {
+    padding-top: 20px;
+  }
+
+  #idmail-wrap {
+    position: relative;
+    background-color: #606c38;
+    text-align: right;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+  }
+
+  #iconeM {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 50%;
+    transform: translate(-40%, -50%);
+  }
+
+  #idmail {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+    background-color: #9fb35e;
+    top: -16%;
+  }
+
+  #idmail:focus {
+    background-color: white;
+  }
+
+  #idmail::placeholder {
+    color: black;
+  }
+
+  #idsenha-wrap {
+    background-color: #606c38;
+    text-align: right;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+  }
+
+  #iconeS {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 50%;
+    transform: translate(-40%, -50%);
+  }
+
+  #idsenha {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+    background-color: #9fb35e;
+    top: -16%;
+  }
+
+  #idsenha::placeholder {
+    color: black;
+  }
+
+  #idsenha:focus {
+    background-color: white;
   }
 
   #enviar {
@@ -77,6 +241,15 @@
     width: 100%;
     height: 30px;
     border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+  }
+
+  #enviar:active {
+    background-color: #bb894f;
   }
 
   #esqueci {
@@ -84,5 +257,149 @@
     width: 100%;
     height: 30px;
     border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.096);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    position: relative;
+    background-image: linear-gradient(to bottom, #c59054 50%, #db4804);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  main {
+    position: absolute;
+    background-image: url(../imagens/pexels-padrinan.jpg);
+    background-size: cover;
+    min-width: 600px;
+    width: 60vw;
+    max-width: 1000px;
+    min-height: 250px;
+    height: 35vh;
+    max-height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  main > section {
+    position: absolute;
+    background-color: #fefae0;
+    position: right;
+    height: 100%;
+    max-width: 60%;
+    right: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 00px 20px 20px 00px;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+  }
+
+  p {
+    padding-top: 20px;
+  }
+
+  #idmail-wrap {
+    position: relative;
+    background-color: #606c38;
+    text-align: right;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+  }
+
+  #iconeM {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 50%;
+    transform: translate(-40%, -50%);
+  }
+
+  #idmail {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+    background-color: #9fb35e;
+    top: -16%;
+  }
+
+  #idmail:focus {
+    background-color: white;
+  }
+
+  #idmail::placeholder {
+    color: black;
+  }
+
+  #idsenha-wrap {
+    background-color: #606c38;
+    text-align: right;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+  }
+
+  #iconeS {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 50%;
+    transform: translate(-40%, -50%);
+  }
+
+  #idsenha {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+    background-color: #9fb35e;
+    top: -16%;
+  }
+
+  #idsenha::placeholder {
+    color: black;
+  }
+
+  #idsenha:focus {
+    background-color: white;
+  }
+
+  #enviar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: #dda15e;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+  }
+
+  #enviar:active {
+    background-color: #bb894f;
+  }
+
+  #esqueci {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.096);
   }
 }
