@@ -14,10 +14,14 @@
 
 :root {
   --corDestaque: #ccbd5a;
+  --corBanner: #7b2e2e;
+  --corPrincipal: #f5e6c8;
+  --corNav: #3e2c23;
+  --corFundo: #2c1d1a;
 }
 
 body {
-  background-color: #43424d;
+  background-color: var(--corFundo);
   height: 100vh;
 }
 
@@ -32,7 +36,7 @@ header {
   grid-template: 1fr 40px / auto;
 }
 .banner {
-  background-color: #695acc;
+  background-color: var(--corBanner);
   grid-area: 1 / 1 / span 1 / span 1;
 
   display: grid;
@@ -42,10 +46,10 @@ header {
 h1 {
   text-shadow: 2px 2px 1px black;
   text-align: center;
-  color: White;
+  color: #f4ebd0;
 }
 nav {
-  background-color: #695acc;
+  background-color: var(--corBanner);
   text-decoration: None;
   display: grid;
   grid-template: auto / 1fr 1fr 2fr 1fr 1fr;
@@ -56,17 +60,19 @@ nav {
 nav > a {
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: #e2c799;
   height: 30px;
-  background-color: #67618c;
+  background-color: var(--corNav);
   border-radius: 5px 5px 0px 0px;
 }
 main {
   height: fit-content;
+  margin: auto;
+  max-width: 1500px;
   width: 100vw;
   padding: 10px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
-  background-color: #ccbd5a;
+  background-color: var(--corPrincipal);
   display: grid;
   grid-template: 1fr/ 3fr 1fr;
 }
@@ -79,39 +85,40 @@ article {
   place-items: stretch stretch;
 }
 .regras {
-  background-color: #695acc;
+  background-color: var(--corDestaque);
   border-radius: 5px;
   grid-area: 1 / 1 / 2 / 8;
 }
 .ficha {
-  background-color: #695acc;
+  background-color: var(--corDestaque);
   border-radius: 5px;
   grid-area: 2 / -1 / -2 / -4;
   display: grid;
+  grid-template-rows: 50px 1fr;
   place-items: end center;
 }
 .classes {
-  background-color: #695acc;
+  background-color: var(--corDestaque);
   border-radius: 5px;
   grid-area: 4 / 1 / 5 /3;
 }
 .raca {
-  background-color: #695acc;
+  background-color: var(--corDestaque);
   border-radius: 5px;
   grid-area: 4 / 3 / 5 / 5;
 }
 .talentos {
-  background-color: #695acc;
+  background-color: var(--corDestaque);
   border-radius: 5px;
   grid-area: 5 / 1 / 7 / 5;
 }
 .antecedentes {
-  background-color: #695acc;
+  background-color: var(--corDestaque);
   border-radius: 5px;
   grid-area: 5 / 5 / 7 / 8;
 }
 .combo {
-  background-color: #695acc;
+  background-color: var(--corDestaque);
   border-radius: 5px;
   grid-area: 2 / 1 / 4 / -4;
 }
@@ -121,11 +128,27 @@ h2 {
   text-align: center;
 }
 
-img {
-  width: 100%;
+.ficha > img {
+  margin: auto;
+  max-width: 100%;
+  height: 100%;
   padding: 5px;
 }
 
+.ficha > h2 {
+  height: 50px;
+  max-width: 100%;
+}
+
+nav > a:hover {
+  background-color: var(--corDestaque);
+}
+
+nav > a:active {
+  background-color: #948941;
+}
+
 footer {
-  background-color: slateblue;
+  height: 50px;
+  background-color: var(--corPrincipal);
 }
