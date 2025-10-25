@@ -10,3 +10,5 @@
   * Objetivo: Criar uma tela de login responsiva usando media queries
 * [Projeto Grid Layout](https://phellipe-lariucci.github.io/Projetos-HTML5-CSS3/Projeto-Gridlayout)
   * Objetivo: Criar uma tela principal de um site utilizando em sua maioria Grid layout.
+* [Projeto Menu de Videos](https://phellipe-lariucci.github.io/Projetos-HTML5-CSS3/Projeto-Videos)
+  * Objetivo: Praticar insersão de videos no site.
