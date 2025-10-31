@@ -2,7 +2,6 @@
 
 ::-webkit-scrollbar {
   width: 0;
-  height: 0;
 }
 
 :root {
@@ -105,7 +104,8 @@ article {
   min-height: fit-content;
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-  grid-auto-flow: column;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
   gap: 5px;
   place-items: stretch stretch;
 }
@@ -133,7 +133,7 @@ article {
   padding: 5px;
   border-radius: 10px;
   max-height: 800px;
-  grid-area: 2 / 3 / -2 / 4;
+  grid-area: 2 / 3 / 4 / 4;
 }
 
 .combo {
@@ -170,29 +170,31 @@ article {
 
 aside {
   margin: 0px 15px;
-  max-height: 1000px;
+  height: 100vh;
   min-width: 200px;
   display: grid;
-  grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+  grid-template: 200px 200px 100px 1fr 1fr / repeat(4, 1fr);
   place-items: stretch stretch;
   place-content: center center;
-  gap: 25px;
 }
 .guerreiro {
-  height: 100%;
-  grid-area: 1 / 1 / 2 /-1;
+  height: 400px;
+  width: 200px;
+  place-self: center center;
+  grid-area: 1 / 1 / 3 /-1;
 }
 
 aside > h3 {
   font-size: 1.6em;
   padding-top: 30px;
   text-align: center;
-  grid-area: 2 / 1 / -3 / -1;
+  place-self: center center;
+  grid-area: 3 / 1 / 4 / -1;
 }
 
 aside > p {
-  grid-area: 3 / 1 / 5/ -1;
-  padding: 0px 15px;
+  grid-area: 4 / 1 / 5/ -1;
+  padding: 5px 15px;
 }
 aside > a {
   padding: 5px;
@@ -205,18 +207,22 @@ aside > a:hover {
 
 .facebook {
   width: 100%;
+  max-width: 65px;
 }
 
 .instagram {
   width: 100%;
+  max-width: 65px;
 }
 
 .github {
   width: 100%;
+  max-width: 65px;
 }
 
 .youtube {
   width: 100%;
+  max-width: 65px;
 }
 
 footer {
