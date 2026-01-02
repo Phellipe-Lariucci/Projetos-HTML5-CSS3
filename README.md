@@ -1,8 +1,7 @@
 # [Projetos-HTML5-CSS3](https://phellipe-lariucci.github.io/Projetos-HTML5-CSS3/)
 ## Essa pagina se trata apenas de projetos com o objetivo de pratica e fixação dos conteudos propostos no curso do Curso em Video!
 ***
-* [Projeto Grid Layout](https://phellipe-lariucci.github.io/Projetos-HTML5-CSS3/Projeto-Gridlayout)
-  * Objetivo: Criar uma tela principal de um site utilizando em sua maioria Grid layout.
+
 * [Projeto Login](https://phellipe-lariucci.github.io/Projetos-HTML5-CSS3/Projeto-Login)
   * Objetivo: Criar uma tela de login responsiva usando media queries
 * [Projeto Redes Sociais](https://phellipe-lariucci.github.io/Projetos-HTML5-CSS3/Projeto-Redes-Sociais)
